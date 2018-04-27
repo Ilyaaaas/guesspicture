@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="biz.letsoft.guesspicture.GameActivity"
+    android:background="@drawable/background_green">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignRight="@+id/imageButton2"
+        android:layout_alignEnd="@+id/imageButton2"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#ffff74" />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageButton"
+        android:layout_below="@+id/imageView"
+        android:layout_weight="1"
+        android:text="OK"
+        android:nestedScrollingEnabled="true"
+        android:onClick="onMyButtonClick"
+        android:layout_alignRight="@+id/imageButton3"
+        android:layout_alignEnd="@+id/imageButton3"
+        android:textColor="@color/green"
+        android:background="@drawable/button_bg_rounded_corners"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageButton2"
+        android:layout_weight="1"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="OK"
+        android:textColor="@color/green"
+        android:nestedScrollingEnabled="false"
+        android:onClick="onMyButtonClick"
+        android:background="@drawable/button_bg_rounded_corners"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageButton3"
+        android:layout_weight="1"
+        android:layout_below="@+id/imageButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="OK"
+        android:textColor="@color/green"
+        android:onClick="onMyButtonClick"
+        android:background="@drawable/button_bg_rounded_corners"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageButton4"
+        android:layout_weight="1"
+        android:layout_below="@+id/imageButton2"
+        android:layout_alignLeft="@+id/imageButton2"
+        android:layout_alignStart="@+id/imageButton2"
+        android:text="OK"
+        android:textColor="@color/green"
+        android:onClick="onMyButtonClick"
+        android:background="@drawable/button_bg_rounded_corners"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

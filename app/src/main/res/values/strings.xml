@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Guess picture</string>
+    <string name="registration">Регистрация</string>
+    <string name="name">Имя</string>
+    <string name="sername">Фамилия</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="reg_password_again">Повторите пароль</string>
+</resources>
